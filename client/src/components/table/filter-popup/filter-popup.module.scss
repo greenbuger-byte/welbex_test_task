@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+
+.filter{
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+  min-height: 60px;
+  margin: 35px 0;
+  top: 5px;
+  border: 1px solid $gray2;
+  z-index: $popup;
+  transition: 0.6s;
+  box-shadow: $shadow;
+  ::after {
+    content: '';
+    position: absolute;
+    right: 48px; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid $white;
+  }
+  :hover{
+    background-color: #fff;
+  }
+  &__wrapper{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__radio{
+    @extend %font_title;
+  }
+  &__type{
+    display: flex;
+    align-items: center;
+  }
+}

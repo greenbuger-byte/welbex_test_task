@@ -1,0 +1,27 @@
+// COLORS //
+$primary: #eeeeee;
+
+$white: #ffffff;
+$gray: #fafafa;
+$gray2: #f0f0f0;
+$black: #000000d9;
+$alert: #ff981b;
+
+//FONT
+@mixin fontRules($size, $weight, $lineHeight){
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+%font_title{
+  @include fontRules('20px', 'bold', '2px');
+}
+%font_text{
+  @include fontRules('14px', 300, '1px');
+}
+
+// LAYERS
+$popup: 1;
+
+// SHADOW
+$shadow: -4px -1px 20px -3px rgba(34, 60, 80, 0.2);

@@ -1,0 +1,28 @@
+@import "variables";
+.app{
+  position: relative;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  &__wrapper{
+    padding: 10px 5px;
+  }
+  &__content{
+
+  }
+}
+input {
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid $gray2;
+  padding: 4px;
+}
+
+button{
+  border: 0;
+  background: none;
+  cursor: pointer;
+  :hover{
+    background-color: $gray;
+  }
+}

@@ -1,0 +1,61 @@
+@import "/src/styles/variables";
+
+.table{
+  width: 100%;
+  text-align: left;
+  border-radius: 2px 2px 0 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  &__thead{
+    display: table-header-group;
+  }
+  &__row{
+    background-color: $white;
+    :hover{
+      background-color: $gray;
+    }
+  }
+  &__cell{
+    @extend %font_text;
+    position: relative;
+    color: $black;
+    text-align: left;
+    border-bottom: 1px solid $gray2;
+    transition: background .3s ease;
+    cursor: pointer;
+    padding: 5px;
+  }
+  &__title{
+    background-color: $gray;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  &__titleInfo{
+    position: absolute;
+    font-size: 10px;
+    top: -20px;
+    background-color: $alert!important;
+    border-radius: 3px;
+    color: $white;
+    padding: 5px;
+    left: 0;
+    :hover{
+      opacity: 1;
+    }
+  }
+  &__sort{
+    display: flex;
+    flex-direction: column;
+    color: $black;
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+  }
+  &__sorted{
+    color: $alert;
+  }
+}
